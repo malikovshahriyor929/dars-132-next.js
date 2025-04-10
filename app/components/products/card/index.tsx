@@ -1,4 +1,4 @@
-import { Product } from "@/app/types";
+import { Product } from "@/types";
 import { FC } from "react";
 import { BsHandbag } from "react-icons/bs";
 

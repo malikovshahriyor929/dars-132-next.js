@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ProductCard from "./card";
-import { Product } from "@/app/types";
+import { Product } from "@/types";
 import Link from "next/link";
 const Products = () => {
   const [data, setData] = useState<Product[]>([]);
