@@ -1,9 +1,9 @@
-import { Product } from "@/app/@types";
+import { Product } from "@/app/types";
 import { FC } from "react";
 import { BsHandbag } from "react-icons/bs";
 
 const formatCurrency = (amount: number): string => {
-  return `${amount.toLocaleString("uz-UZ")} UZS`; 
+  return `${amount.toLocaleString("uz-UZ")} UZS`;
 };
 
 const ProductCard: FC<Product> = ({
@@ -13,7 +13,7 @@ const ProductCard: FC<Product> = ({
   price,
   discount,
   halal,
-  id, 
+  id,
 }) => {
   const hasDiscount: boolean = discount > 0;
   const hasHalal: boolean | string = halal && halal?.length > 0;
@@ -36,7 +36,7 @@ const ProductCard: FC<Product> = ({
           <img
             src={halal}
             alt="Halal"
-            className="absolute top-2 left-2 w-8 h-8 object-contain" 
+            className="absolute top-2 left-2 w-8 h-8 object-contain"
           />
         )}
       </div>
