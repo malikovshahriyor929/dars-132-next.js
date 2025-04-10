@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Category from "./components/category";
-import Header from "./components/header";
 import Products from "./components/products";
 import Showcase from "./components/showcase";
 import { Button, Drawer } from "antd";
@@ -19,7 +18,7 @@ const Home = () => {
   };
   return (
     <div>
-      <Header />
+   
       <div className="w-[90%] mx-auto flex max-w-[1440px] gap-5  max-[870px]:flex-col relative ">
         <Drawer title="Basic Drawer" onClose={onClose} open={open}>
           <Category />
